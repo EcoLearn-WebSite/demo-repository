@@ -1,0 +1,74 @@
+@font-face {
+    font-family: "Chicle-Regular";
+    src: url(Fontes/Chicle-Regular.ttf);
+}
+@font-face {
+    font-family: "Poetsen-one";
+    src: url(Fontes/PoetsenOne-Regular.ttf);
+}
+
+body {
+    
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+}
+.container {
+    font-family: "Chicle-Regular";
+    max-width: 800px;
+    margin: 0 auto;
+}
+p {
+    line-height: 1.6;
+}
+.sintomas > div {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 50px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .sintomas > div img {
+    float: left;
+    width: 40%;
+    /* margin-right: 20px; */
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+  
+  .sintomas > div p {
+    text-align: justify;
+    width: 50%;
+  }
+
+.aviso{
+    font-family: "Poetsen-one";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    padding: 20px;
+    background-color: #e0ffbd;
+    border-left: 5px solid #155c00;
+    margin: 20px;
+    font-size: 1.1rem;
+    width: 15%;
+    border-radius: 10px;
+}
+
+.obs{
+    font-family: "Poetsen-one";
+    position: absolute;
+    top: 90%;
+    right: 0;
+    padding: 20px;
+    background-color: #e0ffbd;
+    border-left: 5px solid #155c00;
+    margin: 20px;
+    font-size: 1.1rem;
+    width: 15%;
+    border-radius: 10px;
+}
