@@ -9,7 +9,7 @@
 
 body {
     margin: 20px;
-    background: linear-gradient(green, #fff3bd);
+    background: linear-gradient(#df8e60, rgb(250, 219, 153));
 }
 h1 {
     text-align: center;
@@ -19,7 +19,7 @@ h1 {
     font-family: "Chicle-Regular";
     max-width: 800px;
     margin: 0 auto;
-    border-left: 5px solid green;
+    border-left: 5px solid rgb(78, 131, 78);
     background-color: #e0ffbd;
     border-radius: 10px;
     padding-left: 50px;
@@ -61,20 +61,18 @@ p {
     border-left: 5px solid #f34d00;
     margin: 20px;
     font-size: 1.1rem;
-    width: 15%;
+    width: 12%;
     border-radius: 10px;
 }
 
 .obs{
     font-family: "Poetsen-one";
-    position: absolute;
-    top: 90%;
-    right: 0;
     padding: 20px;
     background-color: #fff3bd;
     border-left: 5px solid #f34d00;
     margin: 20px;
     font-size: 1.1rem;
-    width: 15%;
+    width: 100%;
     border-radius: 10px;
+    text-align: center;
 }
