@@ -44,13 +44,12 @@ nav ul{
 nav ul li{
     margin: 15px 0;  /*added margin to create space between li elements*/
     width: 200px;
-    background-color: #aa7410; /* change the background color to a more colorful and green color */
-    border-radius: 10px;
-    
+    background-color: #8fa801; /* change the background color to a more colorful and green color */
+    border-radius: 10px; 
 }
 
 nav ul li a{
-    color: #fff;
+    color: rgb(230, 230, 230);
     text-decoration: none;
     height: 25px;
     padding: 5px 10px;
@@ -61,6 +60,9 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    background-color: #744e07; /* change the background color to a more colorful and green color */
+    color: rgb(255, 255, 255);
+    background-color: #6d7407; /* change the background color to a more colorful and green color */
     border-radius: 10px;
+    border-left: 2px solid rgb(230, 230, 230);    
+    border-bottom: 2px solid rgb(230, 230, 230);    
 }

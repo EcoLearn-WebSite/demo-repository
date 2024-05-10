@@ -6,41 +6,78 @@
     font-family: "Poetsen-one";
     src: url(Fontes/PoetsenOne-Regular.ttf);
 }
+@font-face {
+    font-family: "Inter";
+    src: url(Fontes/Inter-VariableFont_slnt\,wght.ttf);
+}
 
 body {
     margin: 20px;
-    background: linear-gradient(#df8e60, rgb(250, 219, 153));
+    background-color: #97a062;
 }
 h1 {
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 50px;
+    font-size: 2rem;
 }
+
+.botaoVoltar {
+    border-radius: 10px;
+    border: 2px solid rgb(172, 172, 172);
+    background-color: #b4c74b;
+}
+
+.botaoVoltar a{
+    color: rgb(236, 236, 236);
+    text-decoration: none;
+    height: 25px;
+    padding: 5px 10px;
+    font-size: 40px;
+    line-height: 2.5rem;
+}
+
+.botaoVoltar a:hover{
+    color: rgb(172, 172, 172);
+    text-decoration: none;
+    height: 25px;
+    padding: 5px 10px;
+    font-size: 40px;
+    line-height: 2.5rem;
+}
+
+
 .container {
-    font-family: "Chicle-Regular";
+    font-family: "Poetsen-one";
     max-width: 800px;
     margin: 0 auto;
-    border-left: 5px solid rgb(78, 131, 78);
-    background-color: #e0ffbd;
-    border-radius: 10px;
+    /* border: 5px solid rgb(97, 138, 97);
+    background-color: rgb(126, 168, 94);
+    border-radius: 10px; */
     padding-left: 50px;
     padding-bottom: 30px;
 }
 p {
     line-height: 1.6;
 }
+
 .sintomas > div {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    gap: 50px;
+    gap: 75px;
     margin-bottom: 20px;
-    font-size: 1.5rem;
-  }
+    font-size: 1.2rem;
+    border-left: 5px solid rgb(121, 212, 17);
+    border-radius: 10px;
+    margin-top: 70px;
+    padding: 20px;
+    background-color: #8fa801a1;
+}
   
   .sintomas > div img {
     float: left;
     width: 40%;
-    border: 4px solid green;
+    border: 4px solid rgb(17, 17, 17);
     border-radius: 50%;
     height: 200px;
     width: 200px;
@@ -52,13 +89,13 @@ p {
   }
 
 .aviso{
-    font-family: "Poetsen-one";
+    font-family: "Inter";
     position: absolute;
-    top: 50%;
+    top: 105%;
     right: 0;
     padding: 20px;
-    background-color: #fff3bd;
-    border-left: 5px solid #f34d00;
+    background-color: rgb(250, 219, 153);
+    border-left: 5px solid #df8460;
     margin: 20px;
     font-size: 1.1rem;
     width: 12%;
@@ -66,13 +103,13 @@ p {
 }
 
 .obs{
-    font-family: "Poetsen-one";
+    font-family: "Inter";
     padding: 20px;
-    background-color: #fff3bd;
-    border-left: 5px solid #f34d00;
+    background-color: rgb(238, 202, 123);
+    border-left: 5px solid #df8460;
     margin: 20px;
     font-size: 1.1rem;
-    width: 100%;
+    width: 90%;
     border-radius: 10px;
     text-align: center;
 }
