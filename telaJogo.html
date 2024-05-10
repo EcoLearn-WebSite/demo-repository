@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLearn - Jogo</title>
+    <link rel="stylesheet" href="styleJogo.css">
+</head>
+
+<body>
+    <div id="parteOndeJogadorInterage">
+        <div id="mascoteFalas">
+            <img src="imagens/Castor-desenho-removebg-preview.png" alt="" id="mascote">
+            <p id="falaCastor">Castor falando bla-bla-bla</p>
+        </div>
+
+
+        <div id="perguntas">
+
+            <div id="bloco-11">
+                <label for="option-11">
+                    <input type="radio" name="option" value="pergunta1" id="option-11">
+                    Resposta 1</label>
+                <span id="result-11"></span>
+            </div>
+
+            <div id="bloco-12">
+                <label for="option-12">
+                    <input type="radio" name="option" value="pergunta2" id="option-12">
+                    Resposta 2</label>
+                <span id="result-12"></span>
+            </div>
+
+            <div id="bloco-13">
+                <label for="option-13">
+                    <input type="radio" name="option" value="pergunta3" id="option-13">
+                    Resposta 3</label>
+                <span id="result-13"></span>
+            </div>
+
+            <div id="bloco-14">
+                <label for="option-14">
+                    <input type="radio" name="option" value="pergunta4" id="option-14">
+                    Resposta 4</label>
+                <span id="result-14"></span>
+            </div>
+
+            <div id="bloco-15">
+                <label for="option-15">
+                    <input type="radio" name="option" value="pergunta5" id="option-15">
+                    Resposta 5</label>
+                <span id="result-15"></span>
+            </div>
+            <button id="enviar" type='button' onclick='displayAnswer1()'>Enviar</button>
+        </div>
+    </div>
+
+    <script src="scriptJogo.js"></script>
+
+</body>
+
+</html>

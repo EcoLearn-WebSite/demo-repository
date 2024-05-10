@@ -1,0 +1,80 @@
+#parteOndeJogadorInterage{
+
+}
+
+#mascoteFalas{
+    position: absolute;
+    right: 30%;
+    top: 5%;
+}
+
+#perguntas{
+    position: absolute;
+    right: 32%;
+    top: 45%;
+}
+
+#mascote{
+    width: 200px;
+    height: 200px;
+}
+
+#bloco-11,#bloco-12,#bloco-13,#bloco-14,#bloco-15{
+    font-size: 20px;
+    width: auto;
+    padding: 8px;
+    margin-bottom: 4px;
+}
+
+#enviar{
+    margin-top: 12px;
+    width:150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ccf1d4;
+}
+
+#falaCastor {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    padding: 20px;
+    border: 2px solid #8b4513;
+    border-radius: 10px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #ccf1d4;
+    box-sizing: border-box;
+}
+
+#falaCastor::before {
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: -20px;
+    border-top: 10px solid transparent;
+    border-right: 10px solid #3c3c3c;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+#falaCastor::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -15px;
+    border-top: 8px solid transparent;
+    border-right: 8px solid #3c3c3c;
+    border-bottom: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+#falaCastor::before {
+    border-right-color: #8b4513;
+}
+
+#falaCastor::after {
+    border-right-color: #8b4513; /* Move the arrow 10 pixels to the left */
+    border-left-color: transparent; /* Make the left border transparent */
+    border-right-color: #ccf1d4; /* Change the right border color to dark green */
+}
