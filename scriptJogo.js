@@ -1,16 +1,20 @@
 let falasCastor = document.getElementById('falaCastor');
 
-var imagem = document.getElementById("imagem").src='imagens/arvore_problema_raizes_1.jpg';
+var imagem = document.getElementById("imagem");
 
 let dict  = {
-    1: imagem,
+    1: 'imagens/Arvore_folhas_doentes.jpg',
+}
+
+function enviar(){
+    imagem.src=dict[1];
 }
 
 function displayAnswer1() {  //Caso a resposta certa for a 1
     if (document.getElementById('option-11').checked) {
         document.getElementById('bloco-11').style.border = '3px solid limegreen'
         document.getElementById('result-11').style.color = 'limegreen'
-        desabilitarBotoes();
+        desabilitarBotoes(); 
     }
     if (document.getElementById('option-12').checked) {
         document.getElementById('bloco-12').style.border = '3px solid red'
