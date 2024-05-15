@@ -1,5 +1,11 @@
 let falasCastor = document.getElementById('falaCastor');
 
+var imagem = document.getElementById("imagem").src='imagens/arvore_problema_raizes_1.jpg';
+
+let dict  = {
+    1: imagem,
+}
+
 function displayAnswer1() {  //Caso a resposta certa for a 1
     if (document.getElementById('option-11').checked) {
         document.getElementById('bloco-11').style.border = '3px solid limegreen'
