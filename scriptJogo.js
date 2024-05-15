@@ -1,13 +1,29 @@
 let falasCastor = document.getElementById('falaCastor');
 
 var imagem = document.getElementById("imagem");
+var i = 0;  //INTERAVEL PARA TROCAR IMAGEM
 
 let dict  = {
     1: 'imagens/Arvore_folhas_doentes.jpg',
 }
 
 function enviar(){
-    imagem.src=dict[1];
+    i = i + 1;
+    habilitarBotoes();
+    imagem.src=dict[i];
+    if(i == 1 || i == 6){
+        document.getElementById("enviar").onclick = function() { displayAnswer2(); };
+    }else if(i == 2 || i == 8){
+        document.getElementById("enviar").onclick = function() { displayAnswer3(); };
+    }else if(i == 4 || i == 5){
+        document.getElementById("enviar").onclick = function() { displayAnswer4(); };
+    }else if(i == 3 || i == 9){
+        document.getElementById("enviar").onclick = function() { displayAnswer5(); };
+    }else if(i == 7){
+        document.getElementById("enviar").onclick = function() { displayAnswer1(); };
+    }else{
+
+    }
 }
 
 function displayAnswer1() {  //Caso a resposta certa for a 1
@@ -138,7 +154,7 @@ function displayAnswer4() {  //função caso a respota correta seja a 4
     }
 }
 
-function displayAnswer4() {  //função caso a respota correta seja a 5
+function displayAnswer5() {  //função caso a respota correta seja a 5
     if (document.getElementById('option-11').checked) {
         document.getElementById('bloco-11').style.border = '3px solid red'
         document.getElementById('result-11').style.color = 'red'
@@ -174,9 +190,16 @@ function desabilitarBotoes() {
     document.getElementById('option-15').disabled = true;
 }
 
+function habilitarBotoes() {
+    document.getElementById('option-11').disabled = false;
+    document.getElementById('option-12').disabled = false;
+    document.getElementById('option-13').disabled = false;
+    document.getElementById('option-14').disabled = false;
+    document.getElementById('option-15').disabled = false;
+}
+
 function respotasCastorAoErrar() {
     let aleatorio = Math.floor(Math.random() * (6 - 1) + 1);
-    
 
     switch(aleatorio){
         case 1:
