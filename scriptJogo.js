@@ -1,7 +1,7 @@
 let falasCastor = document.getElementById('falaCastor');
 desabilitarBotaoProximo()
 var imagem = document.getElementById("imagem");
-var i = 0;  //INTERAVEL PARA TROCAR IMAGEM
+var i = 0;  //INTERVALO PARA TROCAR IMAGEM
 
 let dict  = {
     1: 'imagens/arvore_folhas_1.jpg',
@@ -207,26 +207,15 @@ function desabilitarBotaoProximo(){
 }
 
 function respotasCastorAoErrar() {
-    let aleatorio = Math.floor(Math.random() * (6 - 1) + 1);
+    let aleatorio = Math.floor(Math.random() * (6 - 1));
 
-    switch(aleatorio){
-        case 1:
-            falasCastor.innerHTML = 'Ops, esta não é a respota correta, tente outra vez.';
-            break;
-        case 2:
-            falasCastor.innerHTML = 'Não, não é essa a resposta, tente outra vez.';
-            break;
-        case 3:
-            falasCastor.innerHTML = 'Foi quase, vamos tentar acertar mais uma vez!';
-            break;
-        case 4:
-            falasCastor.innerHTML = 'Que pena, essa não é a resposta certa, vamos tentar outra resposta!';
-            break;
-        case 5:
-            falasCastor.innerHTML = 'Nossa, esta foi quase, tente outra resposta.';
-            break;
-        default:
-            falasCastor.innerHTML = 'teste';
-            break;
-    }
+    let falasErro = [
+                     'Ops, esta não é a respota correta, tente outra vez.',
+                     'Não, não é essa a resposta, tente outra vez.', 
+                     'Foi quase, vamos tentar acertar mais uma vez!', 
+                     'Que pena, essa não é a resposta certa, vamos tentar outra resposta!', 
+                     'Nossa, esta foi quase, tente outra resposta.'
+                    ]
+
+    falasCastor.innerHTML = falasErro[aleatorio];
 }
