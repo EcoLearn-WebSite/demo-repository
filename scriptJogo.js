@@ -206,6 +206,7 @@ function desabilitarBotaoProximo(){
     document.getElementById("proximo").disabled = true;
 }
 
+//---------------------------------------------
 function respotasCastorAoErrar() {
     let aleatorio = Math.floor(Math.random() * (6 - 1));
 
