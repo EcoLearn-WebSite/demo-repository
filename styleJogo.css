@@ -18,7 +18,7 @@
 
 #perguntas{
     position: absolute;
-    right: 32%;
+    right: 20%;
     top: 45%;
 }
 
@@ -36,6 +36,7 @@
 
 #enviar{
     margin-top: 12px;
+    margin-left: 60px;
     width:150px;
     height: 40px;
     border-radius: 5px;
