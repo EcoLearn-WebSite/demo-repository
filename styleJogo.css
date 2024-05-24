@@ -1,7 +1,31 @@
+.botaoVoltar {
+    border-radius: 10px;
+    border: 2px solid rgb(172, 172, 172);
+    background-color: #b4c74b;
+}
+
+.botaoVoltar a{
+    color: rgb(236, 236, 236);
+    text-decoration: none;
+    height: 20px;
+    padding: 5px 10px;
+    font-size: 30px;
+    line-height: 2.5rem;
+}
+
+.botaoVoltar a:hover{
+    color: rgb(172, 172, 172);
+    text-decoration: none;
+    height: 20px;
+    padding: 5px 10px;
+    font-size: 30px;
+    line-height: 2.5rem;
+}
+
 #imagem{
     position: relative;
-    padding-top: 40px;
-    padding-left: 90px;
+    padding-top: 20px;
+    padding-left: 100px;
     width: 35%;
     height: 480px;
 }
