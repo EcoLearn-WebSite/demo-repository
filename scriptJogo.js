@@ -130,19 +130,16 @@ function displayAnswer3() {  //função caso a respota correta seja a 3
     }
     if (document.getElementById('option-13').checked) { //CORRETA
         document.getElementById('bloco-13').style.backgroundColor = 'lightgreen'
-        document.getElementById('result-13').style.color = 'limegreen'
         falasCastor.innerHTML = 'Parabéns, esta era a resposta certa, vamos para a próxima!'
         desabilitarBotoes();
         exibirBotaoProximo();
     }
     if (document.getElementById('option-14').checked) {
         document.getElementById('bloco-14').style.backgroundColor = 'rgb(227, 99, 99)'
-        document.getElementById('result-14').style.color = 'red'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-15').checked) {
         document.getElementById('bloco-15').style.backgroundColor = 'rgb(227, 99, 99)'
-        document.getElementById('result-15').style.color = 'red'
         respotasCastorAoErrar();
     }
 }
@@ -150,29 +147,24 @@ function displayAnswer3() {  //função caso a respota correta seja a 3
 function displayAnswer4() {  //função caso a respota correta seja a 4
     if (document.getElementById('option-11').checked) {
         document.getElementById('bloco-11').style.backgroundColor = 'rgb(227, 99, 99)'
-        document.getElementById('result-11').style.color = 'red'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-12').checked) {
         document.getElementById('bloco-12').style.backgroundColor = 'rgb(227, 99, 99)'
-        document.getElementById('result-12').style.color = 'red'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-13').checked) {
         document.getElementById('bloco-13').style.backgroundColor = 'rgb(227, 99, 99)'
-        document.getElementById('result-13').style.color = 'red'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-14').checked) { //CORRETA
         document.getElementById('bloco-14').style.backgroundColor = 'lightgreen'
-        document.getElementById('result-14').style.color = 'limegreen'
         falasCastor.innerHTML = 'Parabéns, esta era a resposta certa, vamos para a próxima!'
         desabilitarBotoes();
         exibirBotaoProximo;
     }
     if (document.getElementById('option-15').checked) {
         document.getElementById('bloco-15').style.backgroundColor = 'rgb(227, 99, 99)'
-        document.getElementById('result-15').style.color = 'red'
         respotasCastorAoErrar();
     }
 }
@@ -180,27 +172,22 @@ function displayAnswer4() {  //função caso a respota correta seja a 4
 function displayAnswer5() {  //função caso a respota correta seja a 5
     if (document.getElementById('option-11').checked) {
         document.getElementById('bloco-11').style.backgroundColor = 'rgb(227, 99, 99)'
-        document.getElementById('result-11').style.color = 'red'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-12').checked) {
         document.getElementById('bloco-12').style.backgroundColor = 'rgb(227, 99, 99)'
-        document.getElementById('result-12').style.color = 'red'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-13').checked) {
         document.getElementById('bloco-13').style.backgroundColor = 'rgb(227, 99, 99)'
-        document.getElementById('result-13').style.color = 'red'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-14').checked) {
         document.getElementById('bloco-14').style.backgroundColor = 'rgb(227, 99, 99)'
-        document.getElementById('result-14').style.color = 'red'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-15').checked) { //CORRETA
         document.getElementById('bloco-15').style.backgroundColor = 'lightgreen'
-        document.getElementById('result-15').style.color = 'limegreen'
         falasCastor.innerHTML = 'Parabéns, esta era a resposta certa, vamos para a próxima!'
         desabilitarBotoes();
         exibirBotaoProximo();
