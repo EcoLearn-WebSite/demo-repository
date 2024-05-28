@@ -22,6 +22,19 @@
     line-height: 2.5rem;
 }
 
+#perguntas div{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-left: 2px solid rgb(31, 29, 29);    
+    border-bottom: 2px solid rgb(31, 29, 29);    
+}
+
+#perguntas div label{
+    border-radius: 10px;
+    padding: 10px 0px;
+    margin: 10px;
+}
+
 #imagem{
     position: relative;
     padding-top: 20px;
