@@ -161,7 +161,7 @@ function displayAnswer4() {  //função caso a respota correta seja a 4
         document.getElementById('bloco-14').style.backgroundColor = 'lightgreen'
         falasCastor.innerHTML = 'Parabéns, esta era a resposta certa, vamos para a próxima!'
         desabilitarBotoes();
-        exibirBotaoProximo;
+        exibirBotaoProximo();
     }
     if (document.getElementById('option-15').checked) {
         document.getElementById('bloco-15').style.backgroundColor = 'rgb(227, 99, 99)'
