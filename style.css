@@ -112,3 +112,56 @@ nav ul li a:hover{
     font-style: normal;
     font-size: 22px;
 }
+.janela-modal{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.473);
+}
+dialog{
+    border: none;
+    border-radius: .5rem;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.486);
+    width: 50%;
+    height: 75%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    background-color: #8fa801;
+    background-image: url(https://media.istockphoto.com/id/1332867721/pt/vetorial/texture-of-tree-bark.jpg?s=612x612&w=0&k=20&c=FWaWzm37HINMSpuMHu5NGH3NIq1LAKqcQvR6SW0gsVs=);
+    background-position:  left;
+    color:rgb(255, 255, 255)
+   
+
+}
+h2{
+    text-align: center;
+}
+h4{
+    position: relative;
+    display: flex;
+    top: 15%;
+    left: 2%;
+    color: rgb(252, 252, 252);
+    
+}
+    
+#botao-fechar{
+    position: relative;
+    display: flex;
+    background-color: #f8f7f4c9;
+    border-radius: 5px;
+    margin-top: -60%;
+    left: 97%;
+    font-size: large;
+    border:none;
+}
+p{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: large;
+   text-align: justify;
+   
+}
