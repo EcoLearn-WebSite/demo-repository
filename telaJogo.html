@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <span><button class="botaoVoltar"><a href="index.html">&#8678</a></button></span> <!-- Copiei o botão do th, ja mexi no css-->
     <div>
         <img src="imagens/arvore_problema_raizes_1.jpg" id="imagem">
     </div>
@@ -16,45 +17,40 @@
     <div id="parteOndeJogadorInterage">
         <div id="mascoteFalas">
             <img src="imagens/Castor-desenho-removebg-preview.png" alt="" id="mascote">
-            <p id="falaCastor">Castor falando bla-bla-bla</p>
+            <p id="falaCastor">Qual das cinco perguntas abaixo está correta?</p>
         </div>
 
 
         <div id="perguntas">
 
             <div id="bloco-11">
-                <label for="option-11">
-                    <input type="radio" name="option" value="pergunta1" id="option-11">
-                    Resposta 1</label>
-                <span id="result-11"></span>
+                <label for="option-11" id="pergunta1">
+                    <input type="radio" name="option" id="option-11">
+                    As raizes da arvore estão expostas</label>
             </div>
 
             <div id="bloco-12">
-                <label for="option-12">
+                <label for="option-12" id="pergunta2">
                     <input type="radio" name="option" value="pergunta2" id="option-12">
-                    Resposta 2</label>
-                <span id="result-12"></span>
+                    Suas folhas estão com pragas</label>
             </div>
 
             <div id="bloco-13">
-                <label for="option-13">
+                <label for="option-13" id="pergunta3">
                     <input type="radio" name="option" value="pergunta3" id="option-13">
-                    Resposta 3</label>
-                <span id="result-13"></span>
+                    Seu tronco está oco</label>
             </div>
 
             <div id="bloco-14">
-                <label for="option-14">
+                <label for="option-14" id="pergunta4">
                     <input type="radio" name="option" value="pergunta4" id="option-14">
-                    Resposta 4</label>
-                <span id="result-14"></span>
+                    A árvore não possui suas cascas</label>
             </div>
 
             <div id="bloco-15">
-                <label for="option-15">
+                <label for="option-15" id="pergunta5">
                     <input type="radio" name="option" value="pergunta5" id="option-15">
-                    Resposta 5</label>
-                <span id="result-15"></span>
+                    Os galhos estão secos</label>
             </div>
             <button id="enviar" type='button' onclick='displayAnswer1()'>Enviar</button>
             <button id="proximo" onclick="enviar()">proximo</button>

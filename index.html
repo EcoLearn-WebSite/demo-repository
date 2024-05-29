@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -19,13 +20,31 @@
         <div id="cabecalho">
             <nav>
                 <ul class="fonte">
-                    <li><a href="telaJogo.html">JOGAR</a></li>
-                    <li><a href="instrucoes.html">Como Jogar</a></li>
-                    <li><a href="telaCreditos.html">Créditos</a></li>
+                    <li>
+                        <a href="telaJogo.html">JOGAR</a>
+                        <button class="audio-btn" onclick="playAudio('audioJogar')">🔊</button>
+                        <audio id="audioJogar" src="audios/jogar.mp3"></audio>
+                    </li>
+                    <li>
+                        <a href="instrucoes.html">Como Jogar</a>
+                        <button class="audio-btn" onclick="playAudio('audioInstrucoes')">🔊</button>
+                        <audio id="audioInstrucoes" src="audios/instrucoes.mp3"></audio>
+                    </li>
+                    <li>
+                        <a href="telaCreditos.html">Créditos</a>
+                        <button class="audio-btn" onclick="playAudio('audioCreditos')">🔊</button>
+                        <audio id="audioCreditos" src="audios/creditos.mp3"></audio>
+                    </li>
                 </ul>
             </nav>
         </div>
     </div>
+    <script>
+        function playAudio(id) {
+            var audio = document.getElementById(id);
+            audio.play();
+        }
+    </script>
 </body>
 
 </html>
