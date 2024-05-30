@@ -112,7 +112,7 @@ nav ul li a:hover{
     font-style: normal;
     font-size: 22px;
 }
-.janela-modal{
+/* .janela-modal{
     width: 30%;
     height: 60%;
     position: relative;
@@ -164,4 +164,70 @@ p{
    font-size: large;
    text-align: justify;
    
+} */
+
+.janela-modal{
+    width: 30%;
+    height: 60%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.473);
+}
+dialog{
+    border: 2px solid rgb(150, 147, 147);
+    outline: 3px solid black;
+    border-radius: 2%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    width: 50%;
+    height: 60%;
+    font-family:Arial, sans-serif;
+    font-size: large;
+    background-color: #644127;
+    color:rgb(255, 255, 255);
+    text-shadow: -1px -1px 0 #000,  
+    2px -1px 0 #000,
+   -1px  1px 0 #000,
+    1px  1px 0 #000; 
+   
+
+}
+h2{
+    text-align: center;
+    font-family:Arial, sans-serif;
+}
+h4{
+    position: absolute;
+    display: flex;
+    top: 80%;
+    left: 83%;
+    color: rgb(252, 252, 252);
+   
+    
+}
+    
+#botao-fechar{
+    position: relative;
+    display: flex;
+    background-color: #e1ce92c9;
+    border-radius: 5px;
+    margin-top: -48%;
+    left: 97%;
+    font-size: large;
+    border:none;
+    cursor:pointer;
+}
+p{
+   font-family:Arial, sans-serif;
+   font-size: large;
+   text-align: justify;
+   
+}
+#botao-fechar:hover{
+    transform: scale(1.2);
+}
+#ord{
+    list-style-type:none;
 }
