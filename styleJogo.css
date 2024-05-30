@@ -1,11 +1,44 @@
-#parteOndeJogadorInterage{
+.botaoVoltar {
+    border-radius: 10px;
+    border: 2px solid rgb(172, 172, 172);
+    background-color: #b4c74b;
+}
 
+.botaoVoltar a{
+    color: rgb(236, 236, 236);
+    text-decoration: none;
+    height: 20px;
+    padding: 5px 10px;
+    font-size: 30px;
+    line-height: 2.5rem;
+}
+
+.botaoVoltar a:hover{
+    color: rgb(172, 172, 172);
+    text-decoration: none;
+    height: 20px;
+    padding: 5px 10px;
+    font-size: 30px;
+    line-height: 2.5rem;
+}
+
+#perguntas div{
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.815);
+    border-left: 2px solid rgb(31, 29, 29);    
+    border-bottom: 2px solid rgb(31, 29, 29);    
+}
+
+#perguntas div label{
+    border-radius: 10px;
+    padding: 10px 0px;
+    margin: 10px;
 }
 
 #imagem{
     position: relative;
-    padding-top: 40px;
-    padding-left: 90px;
+    padding-top: 20px;
+    padding-left: 100px;
     width: 35%;
     height: 480px;
 }
@@ -18,7 +51,7 @@
 
 #perguntas{
     position: absolute;
-    right: 32%;
+    right: 20%;
     top: 45%;
 }
 
@@ -36,6 +69,7 @@
 
 #enviar{
     margin-top: 12px;
+    margin-left: 60px;
     width:150px;
     height: 40px;
     border-radius: 5px;

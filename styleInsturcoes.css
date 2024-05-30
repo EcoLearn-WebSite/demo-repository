@@ -27,10 +27,6 @@ h1 {
     font-size: 2rem;
 }
 
-#titulo{
-    background-image: url(imgInstrucoes/woodBoard.jpg);
-}
-
 .botaoVoltar {
     padding: 0; /* Remove o padding do botão */
     border: none; /* Remove a borda padrão */
@@ -60,6 +56,9 @@ h1 {
     padding-bottom: 30px;
     background-color: rgba(102, 154, 25, 0.667);
     border-radius: 10px;
+    box-shadow:
+    inset 0 0 1em rgb(40, 79, 13),
+    0 0 1em rgb(32, 79, 10);
 }
 
 p {
