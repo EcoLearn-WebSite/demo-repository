@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
-    
+
 </head>
 
 <body>
@@ -41,42 +41,47 @@
     </div>
     <div class="janela-modal">
         <div class="modal">
-        <dialog>
-        <h2> Créditos:</h2>
-        <p><strong>
-          Para este projeto de desenvolvimento de jogo, utilizamos as linguagens JavaScript, HTML e CSS como base tecnológica. <br><br> A integração harmoniosa dessas tecnologias nos permitiu criar um jogo interativo e envolvente que atende aos requisitos do nosso projeto acadêmico de Engenharia de Software.  Esperamos que este jogo tenha sido uma fonte de aprendizado e entretenimento para todos os nossos jogadores. Obrigado por fazer parte desta jornada! Este jogo foi desenvolvido com dedicação por:
-        <ul>
-            <li> Thomas Tanabe</li>
-            <li> Rafael Gebara</li>
-            <li> Henrique Zolin</li>
-            <li> Luigi Valencio</li>
-        </ul>
-        <h4><strong>&copy;EcoLearn</strong></h4>
-    </strong>
-        </p>
-        <button id="botao-fechar">X</button>
-    </dialog>
+            <dialog>
+                <h2> Créditos:</h2>
+                <p><strong>
+                        Para este projeto de desenvolvimento de jogo, utilizamos as linguagens JavaScript, HTML e CSS
+                        como base tecnológica. <br><br> A integração harmoniosa dessas tecnologias nos permitiu criar um
+                        jogo interativo e envolvente que atende aos requisitos do nosso projeto acadêmico de Engenharia
+                        de Software. Esperamos que este jogo tenha sido uma fonte de aprendizado e entretenimento para
+                        todos os nossos jogadores. Obrigado por fazer parte desta jornada! Este jogo foi desenvolvido
+                        com dedicação por:
+                        <ul>
+                            <li> Thomas Tanabe</li>
+                            <li> Rafael Gebara</li>
+                            <li> Henrique Zolin</li>
+                            <li> Luigi Valencio</li>
+                        </ul>
+                        <h4><strong>&copy;EcoLearn</strong></h4>
+                    </strong>
+                </p>
+                <button id="botao-fechar">X</button>
+            </dialog>
+        </div>
     </div>
     </div>
-    </div>
-    </body>
+</body>
 
-   <script>
+<script>
     function playAudio(id) {
-     var audio = document.getElementById(id);
-    audio.play();
-}
-//Função Modal    
-   const button = document.querySelector("credits")
+        var audio = document.getElementById(id);
+        audio.play();
+    }
+    //Função Modal    
+    const button = document.querySelector("credits")
     const modal = document.querySelector("dialog")
     const buttonClose = document.querySelector("dialog button")
 
-    function OpenModal(){
-    modal.showModal()
-}
-    buttonClose.onclick = function(){
-    modal.close()
-}
+    function OpenModal() {
+        modal.showModal()
+    }
+    buttonClose.onclick = function () {
+        modal.close()
+    }
 </script>
 </body>
 

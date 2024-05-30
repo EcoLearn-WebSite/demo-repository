@@ -113,8 +113,8 @@ nav ul li a:hover{
     font-size: 22px;
 }
 .janela-modal{
-    width: 100vw;
-    height: 100vh;
+    width: 30%;
+    height: 60%;
     position: relative;
     top: 0;
     left: 0;
