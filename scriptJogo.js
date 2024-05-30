@@ -18,13 +18,13 @@ let imagens = {
 let frases = {
     1: ['Seus galhos estão secos', 'Suas folhas apressentam uma coloração diferente', 'Suas raízes estão com pragas', 'A casca da árvore está se soltando', 'O tronco da árvore está oco'],
     2: ['Suas folhas estão enferrujadas', 'As raízes estão muito expostas', 'Seus galhos estão com pragas', 'A árvore está sem sua casca', 'O tronco está podre'],
-    3: ['A árvore está saudável','Suas folhas estão amareladas','Os galhos da árvore estão secos','As raízes estão podres','O tronco da árvore está oco por dentro'],
-    4: ['O tronco está oco e podre','Suas raízes estão doentes','A árvore está saudável','Seus galhos estão caíndo','As folhas apresentam ferrugem'],
+    3: ['A árvore está saudável', 'Suas folhas estão amareladas', 'Os galhos da árvore estão secos', 'As raízes estão podres', 'O tronco da árvore está oco por dentro'],
+    4: ['O tronco está oco e podre', 'Suas raízes estão doentes', 'A árvore está saudável', 'Seus galhos estão caíndo', 'As folhas apresentam ferrugem'],
     5: ['Seus galhos estão secos', 'Suas raízes estão expostas', 'A casca da árvore está caindo', 'O tronco está oco', 'Não existe nenhum problema com a árvore'],
-    6: ['Suas folhas estão com ferrugem','A casca da árvore está podre','As raízes da árvore estão expostas','Pragas estão adoecendo a árvore','Seus galhos secos'],
-    7: ['A árvore não possuí raízes','Suas folhas estão caíndo','O tronco está oco por baixo','Os galhos estão podre','A árvore está saúdavel'],
-    8: ['Suas folhas estão amareladas','A maioria das cascas da árvore caíram','O tronco da árvore está oco','Suas raízes estão expostas','Todos esses problemas'],
-    9: ['O tronco está podre','Suas folhas estão com ferrugem','A árvore está totalmente saúdavel','Os galhos da árvore estão secos','A árvore está com problemas nas raízes'],
+    6: ['Suas folhas estão com ferrugem', 'A casca da árvore está podre', 'As raízes da árvore estão expostas', 'Pragas estão adoecendo a árvore', 'Seus galhos secos'],
+    7: ['A árvore não possuí raízes', 'Suas folhas estão caíndo', 'O tronco está oco por baixo', 'Os galhos estão podre', 'A árvore está saúdavel'],
+    8: ['Suas folhas estão amareladas', 'A maioria das cascas da árvore caíram', 'O tronco da árvore está oco', 'Suas raízes estão expostas', 'Todos esses problemas'],
+    9: ['O tronco está podre', 'Suas folhas estão com ferrugem', 'A árvore está totalmente saúdavel', 'Os galhos da árvore estão secos', 'A árvore está com problemas nas raízes'],
 }
 
 let displayAnswer = { //Ordem das respostas
@@ -39,15 +39,26 @@ let displayAnswer = { //Ordem das respostas
     9: displayAnswer4,
 }
 
+const button = document.querySelector("credits")
+const modal = document.querySelector("dialog")
+const buttonClose = document.querySelector("dialog button")
+
+function OpenModal() {
+    modal.showModal()
+}
+buttonClose.onclick = function () {
+    modal.close()
+}
+
 function mudarFrases(i) {
     const labels = document.querySelectorAll('label[id^="pergunta"]');  //seleciona os labels do programa para mudar somente eles
-    let j=0;
+    let j = 0;
     labels.forEach((label, index) => {
         const texto = frases[i][j]; // Pega os textos do objeto frases para mudar os labels
         const input = label.querySelector('input');  //guarda os inputs radioButton ja que os antigos vao ser substituidos pelo innerHTML
         label.innerHTML = `${input.outerHTML} ${texto}`;
         j++;
-      });
+    });
 }
 
 
@@ -56,12 +67,13 @@ function enviar() {
     falasCastor.innerHTML = 'Qual das cinco perguntas abaixo está correta? Restam só ' + (10 - i) + " perguntas!";
     habilitarBotoes();
     desabilitarBotaoProximo();
-    imagem.src = imagens[i];
-    if (i in displayAnswer) { 
-        document.getElementById("enviar").onclick = function() { displayAnswer[i](); }; //troca a função onclick pela função que tera a resposta correta
+    if (i in displayAnswer) {
+        imagem.src = imagens[i];
+        document.getElementById("enviar").onclick = function () { displayAnswer[i](); }; //troca a função onclick pela função que tera a resposta correta
         mudarFrases(i);
     } else {
-        //APLICAR FUNCIONALIDADE AO VENCER
+        falasCastor.innerHTML = 'Parabéns por terminar o jogo!';
+        OpenModal();
     }
 }
 
@@ -196,7 +208,7 @@ function displayAnswer5() {  //função caso a respota correta seja a 5
 
 
 // --------------------------------------------------------------------------
-function desabilitarBotoes() { 
+function desabilitarBotoes() {
     document.getElementById('option-11').disabled = true;
     document.getElementById('option-12').disabled = true;
     document.getElementById('option-13').disabled = true;

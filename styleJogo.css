@@ -37,6 +37,41 @@
     height: 480px;
 }
 
+dialog{
+    border-radius: 15px;
+    position: relative;
+    width: 70%;
+    height: 40%;
+    font-size: 25px;
+    color: white;
+    text-shadow: 1px black;
+    background-color: #ad5618;
+    border-color: bisque;
+}
+
+dialog p{
+    margin-left: 100px;  
+}
+
+
+#castorVitoria{
+    float: left;
+    border: 2px solid rgb(206, 206, 206);
+    outline: 3px solid black;
+    border-radius: 50%;
+    height: 225px;
+    width: 225px;
+}
+
+#botao-fechar{
+    position: absolute;
+    top: 7%;
+    left: 95%;
+    color: rgb(25, 94, 25);
+    font-size: 20px;
+    background-color: rgb(52, 197, 113);
+}
+
 #mascoteFalas{
     position: absolute;
     right: 30%;
