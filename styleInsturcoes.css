@@ -32,29 +32,22 @@ h1 {
 }
 
 .botaoVoltar {
-    border-radius: 10px;
-    border: 2px solid rgb(172, 172, 172);
-    background-color: #b4c74b;
+    padding: 0; /* Remove o padding do botão */
+    border: none; /* Remove a borda padrão */
+    background: none; /* Remove o fundo padrão */
+    cursor: pointer; /* Cursor em formato de mãozinha */
 }
 
-.botaoVoltar a{
-    color: rgb(236, 236, 236);
-    text-decoration: none;
-    height: 25px;
-    padding: 5px 10px;
-    font-size: 40px;
-    line-height: 2.5rem;
+.botaoVoltar img{
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do botão */
+    max-height: 100%;
+    width: 80px;
+    height: 100px;
 }
 
-.botaoVoltar a:hover{
-    color: rgb(172, 172, 172);
-    text-decoration: none;
-    height: 25px;
-    padding: 5px 10px;
-    font-size: 40px;
-    line-height: 2.5rem;
+    .botaoVoltar:hover{
+        transform: scale(1.2);
 }
-
 
 .container {
     font-family: "ChelseaMarket";
@@ -68,6 +61,7 @@ h1 {
     background-color: rgba(102, 154, 25, 0.667);
     border-radius: 10px;
 }
+
 p {
     line-height: 1.6;
 }
