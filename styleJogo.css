@@ -31,7 +31,7 @@
 
 #imagem{
     position: relative;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-left: 100px;
     width: 35%;
     height: 480px;
@@ -41,7 +41,7 @@ dialog{
     border-radius: 15px;
     position: relative;
     width: 70%;
-    height: 40%;
+    height: 45%;
     font-size: 25px;
     color: white;
     text-shadow: 1px black;
@@ -50,13 +50,16 @@ dialog{
 }
 
 dialog p{
-    margin-left: 100px;  
+    position: relative;
+    margin-top: 4%;
+    margin-left: 27%;  
     text-shadow: -1px -1px 0 black;
 }
 
 
 #castorVitoria{
     float: left;
+    margin-top: 2%;
     border: 2px solid rgb(206, 206, 206);
     outline: 3px solid black;
     border-radius: 50%;
@@ -67,10 +70,18 @@ dialog p{
 #botao-fechar{
     position: absolute;
     top: 7%;
-    left: 95%;
-    color: rgb(25, 94, 25);
-    font-size: 20px;
-    background-color: rgb(52, 197, 113);
+    left: 94%;
+    color: red;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25px;
+    background-color: rgb(207, 224, 214);
+    width: 36px;
+}
+
+#botao-fechar:hover{
+    color: rgb(206, 17, 17);
+    background-color: rgb(179, 179, 179);
+    cursor: pointer;
 }
 
 #mascoteFalas{
