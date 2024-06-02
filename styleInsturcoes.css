@@ -76,7 +76,13 @@
     height: 200px;
     width: 200px;
 }
-  
+
+/* Hover das imagens */
+.sintomas > div img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 20px whitesmoke
+}
+
   .sintomas > div p {
     text-align: justify;
     width: 50%;
