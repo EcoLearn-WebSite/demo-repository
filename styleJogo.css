@@ -20,7 +20,8 @@
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.815);
     border-left: 2px solid rgb(31, 29, 29);    
-    border-bottom: 2px solid rgb(31, 29, 29);    
+    border-bottom: 2px solid rgb(31, 29, 29);
+    margin: 10px;    
 }
 
 #perguntas div label{
@@ -89,14 +90,15 @@ dialog p{
 
 #mascoteFalas{
     position: absolute;
-    right: 30%;
-    top: 5%;
+    right: 36%;
+    top: 19%;
 }
 
 #perguntas{
     position: absolute;
     right: 20%;
     top: 45%;
+    font-family: "Peralta", serif;
 }
 
 #mascote{
@@ -116,9 +118,13 @@ dialog p{
     width:150px;
     height: 40px;
     border-radius: 5px;
-    background-color: #ccf1d4;
-    margin-left: 15px;
-    margin-right: 15px;
+    background-color: green;
+    margin-left: 60px;
+    margin-right: 25px;
+    font-family: "Peralta", serif;
+    font-size: 20px;
+    color: white;
+    border: 2px solid rgba(117, 55, 10, 0.902);
 }
 
 #botaoProx{
@@ -126,9 +132,13 @@ dialog p{
     width:150px;
     height: 40px;
     border-radius: 5px;
-    background-color: #ccf1d4;
-    margin-left: 15px;
-    margin-right: 15px;
+    background-color: green;
+    margin-left: 25px;
+    margin-right: 60px;
+    font-family: "Peralta", serif;
+    font-size: 20px;
+    color: white;
+    border: 2px solid rgba(117, 55, 10, 0.902);
 }
 
 #falaCastor {
@@ -140,7 +150,7 @@ dialog p{
     border-radius: 10px;
     width: 300px;
     margin: 0 auto;
-    background-color: #ccf1d4;
+    background-color: white;
     box-sizing: border-box;
 }
 
