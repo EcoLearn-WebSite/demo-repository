@@ -89,13 +89,15 @@ dialog p {
 
 #mascoteFalas {
     position: absolute;
-    right: 36%;
+    right: 30%;
     top: 19%;
 }
 
 #perguntas {
+    align-self: center;
     position: absolute;
-    right: 20%;
+    left: 60%;
+    right: 10%;
     top: 45%;
     font-family: "Peralta", serif;
 }
@@ -228,7 +230,7 @@ body {
 
 /* Media Queries for Responsiveness */
 
-@media (max-width: 1024px) {
+@media (max-width: 1366px) {
     #imagem {
         width: 40%;
         height: auto;
@@ -252,7 +254,7 @@ body {
         right: 30%;
     }
     #perguntas {
-        right: 15%;
+        left: 65%;
     }
     #falaCastor {
         width: 250px;
@@ -260,16 +262,16 @@ body {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     #imagem {
-        width: 80%;
+        width: 50%;
         height: auto;
-        left: 10px;
+        left: 25px;
     }
     dialog {
         width: 90%;
         height: auto;
-        font-size: 20px;
+        font-size: 22px;
     }
     dialog p {
         margin-left: 15%;
@@ -283,9 +285,10 @@ body {
         font-size: 20px;
     }
     #mascoteFalas {
-        right: 20%;
+        right: 25%;
     }
     #perguntas {
+        left: 65%;
         right: 10%;
         top: 40%;
     }
@@ -303,16 +306,16 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     #imagem {
-        width: 100%;
+        width: 70%;
         height: auto;
-        left: 0;
+        left: 10px;
     }
     dialog {
-        width: 100%;
+        width: 95%;
         height: auto;
-        font-size: 16px;
+        font-size: 18px;
     }
     dialog p {
         margin-left: 10%;
@@ -326,9 +329,10 @@ body {
         font-size: 18px;
     }
     #mascoteFalas {
-        right: 10%;
+        right: 20%;
     }
     #perguntas {
+        left: 65%;
         right: 5%;
         top: 35%;
     }
