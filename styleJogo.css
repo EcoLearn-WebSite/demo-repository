@@ -5,39 +5,44 @@
     cursor: pointer; /* Cursor em formato de mãozinha */
 }
 
-.botaoVoltar img{
+.botaoVoltar img {
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura do botão */
     max-height: 100%;
     width: 80px;
     height: 100px;
 }
 
-.botaoVoltar:hover{
-        transform: scale(1.2);
+.botaoVoltar:hover {
+    transform: scale(1.3);
 }
 
-#perguntas div{
+#perguntas div {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.815);
-    border-left: 2px solid rgb(31, 29, 29);    
-    border-bottom: 2px solid rgb(31, 29, 29);    
+    border-left: 2px solid rgb(31, 29, 29);
+    border-bottom: 2px solid rgb(31, 29, 29);
+    margin: 10px;
 }
 
-#perguntas div label{
+#perguntas div label {
     border-radius: 10px;
     padding: 10px 0px;
     margin: 10px;
 }
 
-#imagem{
+#imagem {
     position: relative;
-    padding-top: 25px;
-    padding-left: 100px;
-    width: 35%;
-    height: 480px;
+    top: 25px;
+    left: 100px;
+    right: 55%;
+    width: 45%;
+    height: 560px;
+    border-radius: 30px;
+    border: 4px solid rgb(255, 255, 255);
+    outline: 6px solid rgba(117, 55, 10, 0.902);
 }
 
-dialog{
+dialog {
     border-radius: 15px;
     position: relative;
     width: 70%;
@@ -49,15 +54,14 @@ dialog{
     border-color: bisque;
 }
 
-dialog p{
+dialog p {
     position: relative;
     margin-top: 4%;
-    margin-left: 27%;  
+    margin-left: 27%;
     text-shadow: -1px -1px 0 black;
 }
 
-
-#castorVitoria{
+#castorVitoria {
     float: left;
     margin-top: 2%;
     border: 2px solid rgb(206, 206, 206);
@@ -67,7 +71,7 @@ dialog p{
     width: 225px;
 }
 
-#botao-fechar{
+#botao-fechar {
     position: absolute;
     top: 7%;
     left: 94%;
@@ -78,43 +82,66 @@ dialog p{
     width: 36px;
 }
 
-#botao-fechar:hover{
+#botao-fechar:hover {
     color: rgb(206, 17, 17);
     background-color: rgb(179, 179, 179);
     cursor: pointer;
 }
 
-#mascoteFalas{
+#mascoteFalas {
     position: absolute;
     right: 30%;
-    top: 5%;
+    top: 19%;
 }
 
-#perguntas{
+
+#perguntas {
+    align-self: center;
     position: absolute;
-    right: 20%;
+    left: 60%;
+    right: 10%;
     top: 45%;
+    font-family: "Peralta", serif;
 }
 
-#mascote{
+#mascote {
     width: 200px;
     height: 200px;
 }
 
-#bloco-11,#bloco-12,#bloco-13,#bloco-14,#bloco-15{
+#bloco-11, #bloco-12, #bloco-13, #bloco-14, #bloco-15 {
     font-size: 20px;
     width: auto;
     padding: 8px;
     margin-bottom: 4px;
 }
 
-#enviar{
+#botaoEnviar {
     margin-top: 12px;
-    margin-left: 60px;
-    width:150px;
+    width: 150px;
     height: 40px;
     border-radius: 5px;
-    background-color: #ccf1d4;
+    background-color: green;
+    margin-left: 60px;
+    margin-right: 25px;
+    font-family: "Peralta", serif;
+    font-size: 20px;
+    color: white;
+    border: 2px solid rgba(117, 55, 10, 0.902);
+}
+
+#botaoProx {
+    margin-top: 12px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: green;
+    margin-left: 25px;
+    margin-right: 60px;
+    font-family: "Peralta", serif;
+    font-size: 20px;
+    color: white;
+    border: 2px solid rgba(117, 55, 10, 0.902);
 }
 
 #falaCastor {
@@ -126,7 +153,7 @@ dialog p{
     border-radius: 10px;
     width: 300px;
     margin: 0 auto;
-    background-color: #ccf1d4;
+    background-color: white;
     box-sizing: border-box;
 }
 
@@ -157,7 +184,171 @@ dialog p{
 }
 
 #falaCastor::after {
-    border-right-color: #8b4513; /* Move the arrow 10 pixels to the left */
-    border-left-color: transparent; /* Make the left border transparent */
-    border-right-color: #ccf1d4; /* Change the right border color to dark green */
+    border-right-color: #8b4513;
+    border-left-color: transparent;
+    border-right-color: #ccf1d4;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagens/game_screen_background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.falling-leaves {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('imagens/folhas_caindo.gif'); /* Caminho para o seu GIF */
+    background-size: cover; /* Ajusta a imagem para cobrir o fundo */
+    background-attachment: fixed; /* Faz com que a imagem fique fixa ao rolar a página */
+    background-position: center;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.content {
+    position: relative;
+    z-index: 3;
+    padding: 20px;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1366px) {
+    #imagem {
+        width: 40%;
+        height: auto;
+        left: 50px;
+    }
+    dialog {
+        width: 80%;
+        height: auto;
+    }
+    dialog p {
+        margin-left: 20%;
+    }
+    #castorVitoria {
+        height: 175px;
+        width: 175px;
+    }
+    #botao-fechar {
+        left: 90%;
+    }
+    #mascoteFalas {
+        right: 30%;
+    }
+    #perguntas {
+        left: 65%;
+    }
+    #falaCastor {
+        width: 250px;
+        left: 150px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #imagem {
+        width: 50%;
+        height: auto;
+        left: 25px;
+    }
+    dialog {
+        width: 90%;
+        height: auto;
+        font-size: 22px;
+    }
+    dialog p {
+        margin-left: 15%;
+    }
+    #castorVitoria {
+        height: 150px;
+        width: 150px;
+    }
+    #botao-fechar {
+        left: 85%;
+        font-size: 20px;
+    }
+    #mascoteFalas {
+        right: 25%;
+    }
+    #perguntas {
+        left: 65%;
+        right: 10%;
+        top: 40%;
+    }
+    #mascote {
+        width: 150px;
+        height: 150px;
+    }
+    #falaCastor {
+        width: 200px;
+        left: 100px;
+    }
+    #falaCastor::before,
+    #falaCastor::after {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #imagem {
+        width: 70%;
+        height: auto;
+        left: 10px;
+    }
+    dialog {
+        width: 95%;
+        height: auto;
+        font-size: 18px;
+    }
+    dialog p {
+        margin-left: 10%;
+    }
+    #castorVitoria {
+        height: 125px;
+        width: 125px;
+    }
+    #botao-fechar {
+        left: 80%;
+        font-size: 18px;
+    }
+    #mascoteFalas {
+        right: 20%;
+    }
+    #perguntas {
+        left: 65%;
+        right: 5%;
+        top: 35%;
+    }
+    #mascote {
+        width: 120px;
+        height: 120px;
+    }
+    #falaCastor {
+        width: 150px;
+        left: 50px;
+        top: 30px;
+    }
+    #falaCastor::before,
+    #falaCastor::after {
+        display: none;
+    }
 }

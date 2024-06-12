@@ -6,75 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoLearn - Jogo</title>
     <link rel="stylesheet" href="styleJogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Peralta&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <span><button class="botaoVoltar"><a href="index.html">
-        <img src="imagens/wooden-arrow-01.png">
-    </a></button></span> <!-- Copiei o botão do th, ja mexi no css-->
-    <div>
-        <img src="imagens/arvore_problema_raizes_1.jpg" id="imagem">
-    </div>
-
-    <div id="parteOndeJogadorInterage">
-        <div id="mascoteFalas">
-            <img src="imagens/Castor-desenho-removebg-preview.png" alt="" id="mascote">
-            <p id="falaCastor">Qual das cinco perguntas abaixo está correta?</p>
+    <div class="background"></div>
+    <div class="falling-leaves"></div>
+    <div class="content">
+        <span><button class="botaoVoltar"><a href="index.html">
+            <img src="imagens/wooden-arrow-01.png">
+        </a></button></span> <!-- Copiei o botão do th, ja mexi no css-->
+        <div>
+            <img src="imagens/arvore_problema_raizes_1.jpg" id="imagem">
         </div>
-
-
-        <div id="perguntas">
-
-            <div id="bloco-11">
-                <label for="option-11" id="pergunta1">
-                    <input type="radio" name="option" id="option-11">
-                    As raizes da arvore estão expostas</label>
+    
+        <div id="parteOndeJogadorInterage">
+            <div>
+            <div id="mascoteFalas">
+                <img src="imagens/Castor-desenho-removebg-preview.png" alt="" id="mascote">
+                <p id="falaCastor">Qual das cinco perguntas abaixo está correta?</p>
             </div>
-
-            <div id="bloco-12">
-                <label for="option-12" id="pergunta2">
-                    <input type="radio" name="option" value="pergunta2" id="option-12">
-                    Suas folhas estão com pragas</label>
             </div>
-
-            <div id="bloco-13">
-                <label for="option-13" id="pergunta3">
-                    <input type="radio" name="option" value="pergunta3" id="option-13">
-                    Seu tronco está oco</label>
+    
+    
+            <div id="perguntas">
+    
+                <div id="bloco-11">
+                    <label for="option-11" id="pergunta1">
+                        <input type="radio" name="option" id="option-11">
+                        As raizes da arvore estão expostas</label>
+                </div>
+    
+                <div id="bloco-12">
+                    <label for="option-12" id="pergunta2">
+                        <input type="radio" name="option" value="pergunta2" id="option-12">
+                        Suas folhas estão com pragas</label>
+                </div>
+    
+                <div id="bloco-13">
+                    <label for="option-13" id="pergunta3">
+                        <input type="radio" name="option" value="pergunta3" id="option-13">
+                        Seu tronco está oco</label>
+                </div>
+    
+                <div id="bloco-14">
+                    <label for="option-14" id="pergunta4">
+                        <input type="radio" name="option" value="pergunta4" id="option-14">
+                        A árvore não possui suas cascas</label>
+                </div>
+    
+                <div id="bloco-15">
+                    <label for="option-15" id="pergunta5">
+                        <input type="radio" name="option" value="pergunta5" id="option-15">
+                        Os galhos estão secos</label>
+                </div>
+                <button id="botaoEnviar" type='button' onclick='displayAnswer1()'>ENVIAR</button>
+                <button id="botaoProx" onclick="enviar()">PRÓXIMO</button>
             </div>
-
-            <div id="bloco-14">
-                <label for="option-14" id="pergunta4">
-                    <input type="radio" name="option" value="pergunta4" id="option-14">
-                    A árvore não possui suas cascas</label>
-            </div>
-
-            <div id="bloco-15">
-                <label for="option-15" id="pergunta5">
-                    <input type="radio" name="option" value="pergunta5" id="option-15">
-                    Os galhos estão secos</label>
-            </div>
-            <button id="enviar" type='button' onclick='displayAnswer1()'>Enviar</button>
-            <button id="proximo" onclick="enviar()">proximo</button>
         </div>
-    </div>
-    <div class="janela-modal">
-        <div class="modal">
-            <dialog>
-                <img src="imagens/castor_vitoria.jpg" alt="" id="castorVitoria">
-                <p>
-                    <strong>
-                        Espero que você tenha aprendido um pouco sobre as árvores e alguns problemas que afetam elas<br><br>
-                        Lembrando que é sempre bom você avisar as autoridades da sua cidade em caso de dúvida. <br><br>
-                        Obrigado por jogar e nos ajudar a cuidar da natureza.
-                    </strong>
-                </p>
-                <button id="botao-fechar">X</button>
-            </dialog>
+        <div class="janela-modal">
+            <div class="modal">
+                <dialog>
+                    <img src="imagens/castor_vitoria.jpg" alt="" id="castorVitoria">
+                    <p>
+                        <strong>
+                            Espero que você tenha aprendido um pouco sobre as árvores e alguns problemas que afetam elas<br><br>
+                            Lembrando que é sempre bom você avisar as autoridades da sua cidade em caso de dúvida. <br><br>
+                            Obrigado por jogar e nos ajudar a cuidar da natureza.
+                        </strong>
+                    </p>
+                    <button id="botao-fechar">X</button>
+                </dialog>
+            </div>
         </div>
-    </div>
+    
+        <script src="scriptJogo.js"></script>
 
-    <script src="scriptJogo.js"></script>
+    </div>
 
 </body>
 

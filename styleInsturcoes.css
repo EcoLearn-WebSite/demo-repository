@@ -10,21 +10,15 @@
     font-family: "Inter";
     src: url(Fontes/Inter-VariableFont_slnt\,wght.ttf);
 }
-
 @font-face {
     font-family: "ChelseaMarket";
     src: url(Fontes/ChelseaMarket-Regular.ttf);
 }
 
-body {
-    margin: 20px;
-    background-color: #97a062;
-}
-h1 {
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 30px;
-    font-size: 2rem;
+.fonte {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .botaoVoltar {
@@ -34,35 +28,28 @@ h1 {
     cursor: pointer; /* Cursor em formato de mãozinha */
 }
 
-.botaoVoltar img{
+.botaoVoltar img {
     max-width: 100%; /* Garante que a imagem não ultrapasse a largura do botão */
     max-height: 100%;
     width: 80px;
     height: 100px;
 }
 
-    .botaoVoltar:hover{
-        transform: scale(1.2);
+.botaoVoltar:hover {
+    transform: scale(1.2);
 }
 
 .container {
     font-family: "ChelseaMarket";
     max-width: 800px;
     margin: 0 auto;
-    /* border: 5px solid rgb(97, 138, 97);
-    background-color: rgb(126, 168, 94);
-    border-radius: 10px; */
     padding-left: 50px;
     padding-bottom: 30px;
-    background-color: rgba(102, 154, 25, 0.667);
+    background-color: rgb(102, 154, 25);
     border-radius: 10px;
     box-shadow:
     inset 0 0 1em rgb(40, 79, 13),
     0 0 1em rgb(32, 79, 10);
-}
-
-p {
-    line-height: 1.6;
 }
 
 .sintomas > div {
@@ -75,8 +62,8 @@ p {
     margin-top: 70px;
     padding: 20px;
 }
-  
-  .sintomas > div img {
+
+.sintomas > div img {
     float: left;
     width: 40%;
     border: 2px solid rgb(206, 206, 206);
@@ -85,21 +72,23 @@ p {
     height: 200px;
     width: 200px;
 }
-  
-  .sintomas > div p {
+
+/* Hover das imagens */
+.sintomas > div img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 20px whitesmoke;
+}
+
+.sintomas > div p {
     text-align: justify;
     width: 50%;
     background-color: #8fa801a1;
-    border-left: 5px solid rgb(121, 212, 17);
+    border-left: 5px solid #2ed20d;
     padding: 50px 20px;
     border-radius: 10px;
 }
 
-.aviso{
-    font-size: 1.1rem;
-}
-
-.obs{
+.obs {
     font-family: "Inter";
     padding: 20px;
     background-color: rgb(238, 202, 123);
@@ -110,3 +99,162 @@ p {
     border-radius: 10px;
     text-align: center;
 }
+
+/* Estilização da Observação */
+.tooltip-container {
+    --background-light: #2ed20d; /* Red */
+    --background-dark: #e1e1e1; /* Black */
+    --text-color-light: #161616;
+    --text-color-dark: #000000;
+    --bubble-size: 12px;
+    --glow-color: rgba(255, 255, 255, 0.5); /* Brighter glow color */
+  
+    position: relative;
+    left: 39%;
+    background: var(--background-light);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    padding: 0.7em 1.8em;
+    color: var(--text-color-light);
+    border-radius: 8px; 
+    width: fit-content;
+}
+
+/* Style for the bubble tooltip */
+.tooltip {
+    position: absolute;
+    top: -100%; /* Initially hidden above the container */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.6em 1em;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: var(--bubble-size);
+    background: var(--background-light);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 700px;
+}
+
+/* Triangle arrow for the bubble tooltip */
+.tooltip::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    border-style: solid;
+    border-width: 8px 8px 0;
+    border-color: var(--background-light) transparent transparent;
+}
+
+/* Tooltip appearance on hover */
+.tooltip-container:hover {
+    background: var(--background-dark);
+    color: var(--text-color-dark);
+    box-shadow: 0 0 20px var(--glow-color); /* Brighter glow effect */
+}
+
+.tooltip-container:hover .tooltip {
+    top: -120%; /* Adjusted position for the bubble tooltip */
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+#divFundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    z-index: -1;
+    background-image: linear-gradient(rgba(33, 233, 213, 0), rgba(75, 194, 237, 0.792)), url('imgInstrucoes/ceuAzul.jpg');
+    background-size: cover; /* cobre a área toda */
+    background-position: center; /* centraliza imagem */
+}
+
+body {
+    background-color: rgb(75, 194, 237);
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px;
+    font-size: 2rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .sintomas > div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .sintomas > div img {
+        width: 100px;
+        height: 100px;
+    }
+    .sintomas > div p {
+        width: 100%;
+        padding: 20px;
+    }
+    .tooltip {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    .botaoVoltar img {
+        width: 60px;
+        height: 80px;
+    }
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sintomas > div {
+        gap: 10px;
+    }
+    .sintomas > div img {
+        width: 80px;
+        height: 80px;
+    }
+    .sintomas > div p {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .obs {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .tooltip-container {
+        left: 10%;
+    }
+    .tooltip {
+        width: 80%;
+    }
+    h1 {
+        font-size: 1.5rem;
+        padding: 20px;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+

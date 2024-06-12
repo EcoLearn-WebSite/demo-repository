@@ -21,19 +21,13 @@
             <nav>
                 <ul class="fonte">
                     <li>
-                        <a href="telaJogo.html">JOGAR</a>
-                        <button class="audio-btn" onclick="playAudio('audioJogar')">🔊</button>
-                        <audio id="audioJogar" src="audios/jogar.mp3"></audio>
+                        <a class="sound-link" href="telaJogo.html">Jogar</a>
                     </li>
                     <li>
-                        <a href="instrucoes.html">Como Jogar</a>
-                        <button class="audio-btn" onclick="playAudio('audioInstrucoes')">🔊</button>
-                        <audio id="audioInstrucoes" src="audios/instrucoes.mp3"></audio>
+                        <a class="sound-link" href="instrucoes.html">Como Jogar</a>
                     </li>
                     <li>
-                        <a href="#" onclick="OpenModal()">Créditos</a>
-                        <button class="audio-btn" onclick="playAudio('audioCreditos')">🔊</button>
-                        <audio id="audioCreditos" src="audios/creditos.mp3"></audio>
+                        <a class="sound-link" href="#" onclick="OpenModal()">Créditos</a>
                     </li>
                 </ul>
             </nav>
@@ -42,7 +36,7 @@
     <div class="janela-modal">
         <div class="modal">
             <dialog>
-                <h2> Créditos:</h2>
+                <h2 class="fonte"> Créditos:</h2>
                 <p><strong>
                         Para este projeto de desenvolvimento de jogo, utilizamos as linguagens JavaScript, HTML e CSS
                         como base tecnológica. <br><br> A integração harmoniosa dessas tecnologias nos permitiu criar um
@@ -66,24 +60,7 @@
     </div>
     </div>
 </body>
-
-<script>
-    function playAudio(id) {
-        var audio = document.getElementById(id);
-        audio.play();
-    }
-    //Função Modal    
-    const button = document.querySelector("credits")
-    const modal = document.querySelector("dialog")
-    const buttonClose = document.querySelector("dialog button")
-
-    function OpenModal() {
-        modal.showModal()
-    }
-    buttonClose.onclick = function () {
-        modal.close()
-    }
-</script>
+<script src="script.js"></script>
 </body>
 
 </html>
