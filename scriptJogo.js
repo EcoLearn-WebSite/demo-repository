@@ -69,7 +69,7 @@ function enviar() {
     desabilitarBotaoProximo();
     if (i in displayAnswer) {
         imagem.src = imagens[i];
-        document.getElementById("enviar").onclick = function () { displayAnswer[i](); }; //troca a função onclick pela função que tera a resposta correta
+        document.getElementById("botaoEnviar").onclick = function () { displayAnswer[i](); }; //troca a função onclick pela função que tera a resposta correta
         mudarFrases(i);
     } else {
         falasCastor.innerHTML = 'Parabéns por terminar o jogo!';
@@ -230,13 +230,13 @@ function habilitarBotoes() {  // Habilita os opções e define as cores para o p
 }
 
 function exibirBotaoProximo() {
-    document.getElementById("proximo").style.display = "block";
-    document.getElementById("proximo").disabled = false;
+    document.getElementById("botaoProx").style.display = "block";
+    document.getElementById("botaoProx").disabled = false;
 }
 
 function desabilitarBotaoProximo() {
-    document.getElementById("proximo").style.display = "none";
-    document.getElementById("proximo").disabled = true;
+    document.getElementById("botaoProx").style.display = "none";
+    document.getElementById("botaoProx").disabled = true;
 }
 
 //---------------------------------------------
