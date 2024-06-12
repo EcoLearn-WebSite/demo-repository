@@ -1,38 +1,36 @@
-html{
-    background-image: url('imagens/backGround\ arvore.jpg');
+html {
+    background-image: url('imagens/backGround_arvore.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: -1;
 }
 
-#cabecalho{
+#cabecalho {
     position: relative;
     right: 20%;
 }
-
-
 
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
 }
 
-img{
+img {
     position: relative;
     padding: 20px;
     margin: 0 auto 15px auto; /* add some margin to the top and bottom of the logo */
-    width: 600px;
-    height: 200px;
+    width: 100%; /* Make the image responsive */
+    max-width: 600px;
+    height: auto; /* Maintain aspect ratio */
     margin-top: -40px;
 }
 
-nav{
+nav {
     padding-right: 50px;
     margin-top: -70px;
-    
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -41,32 +39,16 @@ nav ul{
     align-items: center;
 }
 
-/* nav ul li{
-    margin: 15px 0;  
-    width: 200px;
-    background-color: #8fa801; 
-    border-radius: 10px; 
-} */
-
 nav ul li {
     display: flex;
     align-items: center;
     margin: 15px 0;
-    width: 250px;
+    width: 100%; /* Make the nav items responsive */
+    max-width: 250px;
     background-color: #8fa801;
     border-radius: 10px;
     position: relative;
 }
-
-/* nav ul li a{
-    color: rgb(230, 230, 230);
-    text-decoration: none;
-    height: 25px;
-    padding: 5px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 
 nav ul li a {
     color: rgb(230, 230, 230);
@@ -81,11 +63,10 @@ nav ul li a {
     border-radius: 10px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     color: rgb(255, 255, 255);
-    background-color: #6d7407; /* change the background color to a more colorful and green color */
+    background-color: #6d7407;
     border-radius: 10px;
- 
 }
 
 .audio-btn {
@@ -105,7 +86,6 @@ nav ul li a:hover{
     background-color: #6d7407; 
 }
 
-
 .fonte {
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
@@ -113,49 +93,51 @@ nav ul li a:hover{
     font-size: 22px;
 }
 
-.janela-modal{
-    width: 30%;
+.janela-modal {
+    width: 90%; /* Adjust modal width for smaller screens */
+    max-width: 30%;
     height: 60%;
     position: relative;
     top: 0;
     left: 0;
 }
-dialog::backdrop{
+
+dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.473);
 }
-dialog{
+
+dialog {
     border: 2px solid rgb(150, 147, 147);
     outline: 3px solid black;
     border-radius: 2%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    width: 50%;
+    width: 90%; /* Adjust dialog width for smaller screens */
+    max-width: 50%;
     height: 60%;
-    font-family:Arial, sans-serif;
+    font-family: Arial, sans-serif;
     font-size: large;
     background-color: #644127;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     text-shadow: -1px -1px 0 #000,  
-    2px -1px 0 #000,
-   -1px  1px 0 #000,
-    1px  1px 0 #000; 
-   
+                 2px -1px 0 #000,
+                -1px  1px 0 #000,
+                 1px  1px 0 #000; 
+}
 
-}
-h2{
+h2 {
     text-align: center;
-    font-family:Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
-h4{
+
+h4 {
     position: absolute;
     display: flex;
     top: 80%;
     left: 83%;
     color: rgb(252, 252, 252);
-   
-    
 }
-    
-#botao-fechar{
+
+#botao-fechar {
     position: relative;
     display: flex;
     background-color: #e1ce92c9;
@@ -164,18 +146,74 @@ h4{
     top: -9%;
     left: 97%;
     font-size: large;
-    border:none;
-    cursor:pointer;
+    border: none;
+    cursor: pointer;
 }
-p{
-   font-family:Arial, sans-serif;
-   font-size: large;
-   text-align: justify;
-   
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: large;
+    text-align: justify;
 }
-#botao-fechar:hover{
+
+#botao-fechar:hover {
     transform: scale(1.2);
 }
-#ord{
-    list-style-type:none;
+
+#ord {
+    list-style-type: none;
+}
+
+/* Media Queries for Responsiveness */
+
+@media (max-width: 768px) {
+    #cabecalho {
+        right: 10%;
+    }
+    nav {
+        padding-right: 20px;
+        margin-top: -50px;
+    }
+    nav ul li {
+        width: 80%; /* Adjust width for tablet */
+    }
+    .janela-modal, dialog {
+        width: 80%;
+    }
+    h4 {
+        left: 70%;
+    }
+    #botao-fechar {
+        left: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    img {
+        width: 100%; /* Make the image full-width on mobile */
+        max-width: 100%;
+        height: auto;
+    }
+    nav {
+        padding-right: 10px;
+        margin-top: -30px;
+    }
+    nav ul li {
+        width: 100%; /* Full-width for mobile */
+    }
+    .janela-modal, dialog {
+        width: 90%;
+    }
+    h4 {
+        left: 60%;
+    }
+    #botao-fechar {
+        left: 90%;
+    }
+    p {
+        font-size: medium; /* Adjust font size for mobile */
+    }
 }
