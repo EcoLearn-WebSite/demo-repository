@@ -19,15 +19,17 @@ img {
     position: relative;
     padding: 20px;
     margin: 0 auto 15px auto; /* add some margin to the top and bottom of the logo */
-    width: 100%; /* Make the image responsive */
-    max-width: 600px;
-    height: auto; /* Maintain aspect ratio */
-    margin-top: -40px;
+    width: 600px;
+    height: 130px;
+    margin-top: -10px;
 }
 
 nav {
     padding-right: 50px;
     margin-top: -70px;
+    margin-right: 10%;
+    
+    
 }
 
 nav ul {
