@@ -77,6 +77,13 @@ function enviar() {
     }
 }
 
+function playSound(soundId) {
+    const sound = document.getElementById(soundId);
+    if (sound) {
+        sound.play();
+    }
+}
+
 // As seguintes funções irão checar qual botão foi pressionado e se foi o certo, o botão fica verde, senão ele fica vermelho.
 // Há 5 opções, portanto uma função para cada caso. 
 
@@ -89,18 +96,22 @@ function displayAnswer1() {  //Caso a resposta certa for a 1
         exibirBotaoProximo();
     }
     if (document.getElementById('option-12').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-12').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-13').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-13').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-14').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-14').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-15').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-15').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
@@ -108,6 +119,7 @@ function displayAnswer1() {  //Caso a resposta certa for a 1
 // --------------------------------------------------------------------------
 function displayAnswer2() {  //função caso a respota correta seja a 2
     if (document.getElementById('option-11').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-11').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
@@ -118,14 +130,17 @@ function displayAnswer2() {  //função caso a respota correta seja a 2
         exibirBotaoProximo();
     }
     if (document.getElementById('option-13').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-13').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-14').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-14').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-15').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-15').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
@@ -133,10 +148,12 @@ function displayAnswer2() {  //função caso a respota correta seja a 2
 // --------------------------------------------------------------------------
 function displayAnswer3() {  //função caso a respota correta seja a 3
     if (document.getElementById('option-11').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-11').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-12').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-12').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
@@ -147,10 +164,12 @@ function displayAnswer3() {  //função caso a respota correta seja a 3
         exibirBotaoProximo();
     }
     if (document.getElementById('option-14').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-14').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-15').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-15').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
@@ -158,14 +177,17 @@ function displayAnswer3() {  //função caso a respota correta seja a 3
 // --------------------------------------------------------------------------
 function displayAnswer4() {  //função caso a respota correta seja a 4
     if (document.getElementById('option-11').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-11').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-12').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-12').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-13').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-13').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
@@ -176,6 +198,7 @@ function displayAnswer4() {  //função caso a respota correta seja a 4
         exibirBotaoProximo();
     }
     if (document.getElementById('option-15').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-15').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
@@ -183,18 +206,22 @@ function displayAnswer4() {  //função caso a respota correta seja a 4
 // --------------------------------------------------------------------------
 function displayAnswer5() {  //função caso a respota correta seja a 5
     if (document.getElementById('option-11').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-11').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-12').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-12').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-13').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-13').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-14').checked) {
+        playSound('audioErro');
         document.getElementById('bloco-14').style.backgroundColor = 'rgb(227, 99, 99)'
         respotasCastorAoErrar();
     }

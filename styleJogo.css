@@ -1,12 +1,12 @@
 .botaoVoltar {
-    padding: 0; /* Remove o padding do botão */
-    border: none; /* Remove a borda padrão */
-    background: none; /* Remove o fundo padrão */
-    cursor: pointer; /* Cursor em formato de mãozinha */
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 .botaoVoltar img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do botão */
+    max-width: 100%;
     max-height: 100%;
     width: 80px;
     height: 100px;
@@ -19,14 +19,14 @@
 #perguntas div {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.815);
-    border-left: 2px solid rgb(31, 29, 29);
-    border-bottom: 2px solid rgb(31, 29, 29);
+    border-left: 2px solid #1f1d1d;
+    border-bottom: 2px solid #1f1d1d;
     margin: 10px;
 }
 
 #perguntas div label {
     border-radius: 10px;
-    padding: 10px 0px;
+    padding: 10px 0;
     margin: 10px;
 }
 
@@ -34,11 +34,10 @@
     position: relative;
     top: 25px;
     left: 100px;
-    right: 55%;
     width: 45%;
     height: 560px;
     border-radius: 30px;
-    border: 4px solid rgb(255, 255, 255);
+    border: 4px solid #fff;
     outline: 6px solid rgba(117, 55, 10, 0.902);
 }
 
@@ -64,7 +63,7 @@ dialog p {
 #castorVitoria {
     float: left;
     margin-top: 2%;
-    border: 2px solid rgb(206, 206, 206);
+    border: 2px solid #cecece;
     outline: 3px solid black;
     border-radius: 50%;
     height: 225px;
@@ -78,30 +77,27 @@ dialog p {
     color: red;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 25px;
-    background-color: rgb(207, 224, 214);
+    background-color: #cfe0d6;
     width: 36px;
 }
 
 #botao-fechar:hover {
-    color: rgb(206, 17, 17);
-    background-color: rgb(179, 179, 179);
+    color: #ce1111;
+    background-color: #b3b3b3;
     cursor: pointer;
 }
 
 #mascoteFalas {
     position: absolute;
-    right: 30%;
+    right: 36%;
     top: 19%;
 }
 
-
 #perguntas {
-    align-self: center;
     position: absolute;
-    left: 60%;
-    right: 10%;
+    right: 20%;
     top: 45%;
-    font-family: "Peralta", serif;
+    font-family: 'Peralta', serif;
 }
 
 #mascote {
@@ -116,32 +112,21 @@ dialog p {
     margin-bottom: 4px;
 }
 
-#botaoEnviar {
+#botaoEnviar, #botaoProx {
     margin-top: 12px;
     width: 150px;
     height: 40px;
     border-radius: 5px;
     background-color: green;
     margin-left: 60px;
-    margin-right: 25px;
-    font-family: "Peralta", serif;
+    font-family: 'Peralta', serif;
     font-size: 20px;
     color: white;
     border: 2px solid rgba(117, 55, 10, 0.902);
 }
 
 #botaoProx {
-    margin-top: 12px;
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-    background-color: green;
     margin-left: 25px;
-    margin-right: 60px;
-    font-family: "Peralta", serif;
-    font-size: 20px;
-    color: white;
-    border: 2px solid rgba(117, 55, 10, 0.902);
 }
 
 #falaCastor {
@@ -157,7 +142,7 @@ dialog p {
     box-sizing: border-box;
 }
 
-#falaCastor::before {
+#falaCastor::before, #falaCastor::after {
     content: "";
     position: absolute;
     top: 18px;
@@ -168,24 +153,11 @@ dialog p {
     border-left: 10px solid transparent;
 }
 
-#falaCastor::after {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: -15px;
-    border-top: 8px solid transparent;
-    border-right: 8px solid #3c3c3c;
-    border-bottom: 8px solid transparent;
-    border-left: 8px solid transparent;
-}
-
 #falaCastor::before {
     border-right-color: #8b4513;
 }
 
 #falaCastor::after {
-    border-right-color: #8b4513;
-    border-left-color: transparent;
     border-right-color: #ccf1d4;
 }
 
@@ -216,9 +188,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('imagens/folhas_caindo.gif'); /* Caminho para o seu GIF */
-    background-size: cover; /* Ajusta a imagem para cobrir o fundo */
-    background-attachment: fixed; /* Faz com que a imagem fique fixa ao rolar a página */
+    background-image: url('imagens/folhas_caindo.gif');
+    background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     z-index: 2;
     pointer-events: none;
@@ -230,125 +202,22 @@ body {
     padding: 20px;
 }
 
-/* Media Queries for Responsiveness */
-
-@media (max-width: 1366px) {
+@media (max-width: 1024px) {
     #imagem {
         width: 40%;
         height: auto;
         left: 50px;
     }
-    dialog {
-        width: 80%;
-        height: auto;
-    }
-    dialog p {
-        margin-left: 20%;
-    }
-    #castorVitoria {
-        height: 175px;
-        width: 175px;
-    }
-    #botao-fechar {
-        left: 90%;
-    }
+    
     #mascoteFalas {
-        right: 30%;
-    }
-    #perguntas {
-        left: 65%;
-    }
-    #falaCastor {
-        width: 250px;
-        left: 150px;
-    }
-}
-
-@media (max-width: 1024px) {
-    #imagem {
-        width: 50%;
-        height: auto;
-        left: 25px;
-    }
-    dialog {
-        width: 90%;
-        height: auto;
-        font-size: 22px;
-    }
-    dialog p {
-        margin-left: 15%;
-    }
-    #castorVitoria {
-        height: 150px;
-        width: 150px;
-    }
-    #botao-fechar {
-        left: 85%;
-        font-size: 20px;
-    }
-    #mascoteFalas {
-        right: 25%;
-    }
-    #perguntas {
-        left: 65%;
         right: 10%;
-        top: 40%;
     }
-    #mascote {
-        width: 150px;
-        height: 150px;
+    
+    #perguntas {
+        right: 10%;
     }
+    
     #falaCastor {
         width: 200px;
-        left: 100px;
-    }
-    #falaCastor::before,
-    #falaCastor::after {
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    #imagem {
-        width: 70%;
-        height: auto;
-        left: 10px;
-    }
-    dialog {
-        width: 95%;
-        height: auto;
-        font-size: 18px;
-    }
-    dialog p {
-        margin-left: 10%;
-    }
-    #castorVitoria {
-        height: 125px;
-        width: 125px;
-    }
-    #botao-fechar {
-        left: 80%;
-        font-size: 18px;
-    }
-    #mascoteFalas {
-        right: 20%;
-    }
-    #perguntas {
-        left: 65%;
-        right: 5%;
-        top: 35%;
-    }
-    #mascote {
-        width: 120px;
-        height: 120px;
-    }
-    #falaCastor {
-        width: 150px;
-        left: 50px;
-        top: 30px;
-    }
-    #falaCastor::before,
-    #falaCastor::after {
-        display: none;
     }
 }
