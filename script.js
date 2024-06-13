@@ -20,7 +20,17 @@ function playSound(soundId) {
     }
 }
 
+// Tocando som nos links da tela inicial 
 document.querySelectorAll('.sound-link').forEach(link => {
     link.addEventListener('mouseover', () => playSound('audioHover'));
     link.addEventListener('click', () => playSound('audioClick'));
+});
+
+// Tocando som no botão de voltar da tela de instruções 
+document.getElementById("btnVoltar").addEventListener('mouseover', () => playSound('audioHover'));
+
+// Tocando som nas interações da tela de instruções 
+document.querySelectorAll('.img-sintomas').forEach(img => {
+    img.addEventListener('mouseover', () => playSound('audioHover'));
+    img.addEventListener('click', () => playSound('audioClick'));
 });

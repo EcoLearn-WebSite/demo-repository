@@ -73,6 +73,7 @@ function enviar() {
         mudarFrases(i);
     } else {
         falasCastor.innerHTML = 'Parabéns por terminar o jogo!';
+        playSound('audioFim');
         OpenModal();
     }
 }
@@ -80,9 +81,12 @@ function enviar() {
 function playSound(soundId) {
     const sound = document.getElementById(soundId);
     if (sound) {
+        sound.currentTime = 0;
         sound.play();
     }
 }
+
+document.getElementById("btnVoltar").addEventListener('mouseover', () => playSound('audioHover'));
 
 // As seguintes funções irão checar qual botão foi pressionado e se foi o certo, o botão fica verde, senão ele fica vermelho.
 // Há 5 opções, portanto uma função para cada caso. 
@@ -90,6 +94,7 @@ function playSound(soundId) {
 // --------------------------------------------------------------------------
 function displayAnswer1() {  //Caso a resposta certa for a 1
     if (document.getElementById('option-11').checked) {
+        playSound('audioAcerto');
         document.getElementById('bloco-11').style.backgroundColor = 'lightgreen'
         falasCastor.innerHTML = 'Parabéns, esta era a resposta certa, vamos para a próxima!'
         desabilitarBotoes();
@@ -124,6 +129,7 @@ function displayAnswer2() {  //função caso a respota correta seja a 2
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-12').checked) { //CORRETA
+        playSound('audioAcerto');
         document.getElementById('bloco-12').style.backgroundColor = 'lightgreen'
         falasCastor.innerHTML = 'Parabéns, esta era a resposta certa, vamos para a próxima!'
         desabilitarBotoes();
@@ -158,6 +164,7 @@ function displayAnswer3() {  //função caso a respota correta seja a 3
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-13').checked) { //CORRETA
+        playSound('audioAcerto');
         document.getElementById('bloco-13').style.backgroundColor = 'lightgreen'
         falasCastor.innerHTML = 'Parabéns, esta era a resposta certa, vamos para a próxima!'
         desabilitarBotoes();
@@ -192,6 +199,7 @@ function displayAnswer4() {  //função caso a respota correta seja a 4
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-14').checked) { //CORRETA
+        playSound('audioAcerto');
         document.getElementById('bloco-14').style.backgroundColor = 'lightgreen'
         falasCastor.innerHTML = 'Parabéns, esta era a resposta certa, vamos para a próxima!'
         desabilitarBotoes();
@@ -226,6 +234,7 @@ function displayAnswer5() {  //função caso a respota correta seja a 5
         respotasCastorAoErrar();
     }
     if (document.getElementById('option-15').checked) { //CORRETA
+        playSound('audioAcerto');
         document.getElementById('bloco-15').style.backgroundColor = 'lightgreen'
         falasCastor.innerHTML = 'Parabéns, esta era a resposta certa, vamos para a próxima!'
         desabilitarBotoes();
