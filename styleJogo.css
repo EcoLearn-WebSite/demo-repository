@@ -100,6 +100,12 @@ dialog p {
     font-family: 'Peralta', serif;
 }
 
+#pergunta1,#pergunta2,#pergunta3,#pergunta4,#pergunta5{
+    width: 25%;
+    text-align: justify;
+    align-items: flex-start;
+}
+
 #mascote {
     width: 200px;
     height: 200px;
@@ -107,9 +113,12 @@ dialog p {
 
 #bloco-11, #bloco-12, #bloco-13, #bloco-14, #bloco-15 {
     font-size: 20px;
-    width: auto;
+    width: 450px;
+    max-width:450px;
     padding: 8px;
     margin-bottom: 4px;
+    text-align: left;
+    
 }
 
 #botaoEnviar, #botaoProx {
@@ -136,8 +145,11 @@ dialog p {
     padding: 20px;
     border: 2px solid #8b4513;
     border-radius: 10px;
-    width: 300px;
+    width: 200%;
+    max-width: 200%;
+    height: 100px;
     margin: 0 auto;
+    font-size: 22px;
     background-color: white;
     box-sizing: border-box;
 }
@@ -148,7 +160,7 @@ dialog p {
     top: 18px;
     left: -20px;
     border-top: 10px solid transparent;
-    border-right: 10px solid #3c3c3c;
+    border-right: 10px solid transparent;
     border-bottom: 10px solid transparent;
     border-left: 10px solid transparent;
 }
@@ -158,7 +170,7 @@ dialog p {
 }
 
 #falaCastor::after {
-    border-right-color: #ccf1d4;
+    border-right-color: #ffffff;
 }
 
 body {

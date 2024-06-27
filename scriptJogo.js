@@ -16,13 +16,13 @@ let imagens = {
 }
 
 let frases = {
-    1: ['Seus galhos estão secos', 'Suas folhas apressentam uma coloração diferente', 'Suas raízes estão com pragas', 'A casca da árvore está se soltando', 'O tronco da árvore está oco'],
+    1: ['Seus galhos estão secos', 'Suas folhas apresentam uma coloração diferente', 'Suas raízes estão com pragas', 'A casca da árvore está se soltando', 'O tronco da árvore está oco'],
     2: ['Suas folhas estão enferrujadas', 'As raízes estão muito expostas', 'Seus galhos estão com pragas', 'A árvore está sem sua casca', 'O tronco está podre'],
     3: ['A árvore está saudável', 'Suas folhas estão amareladas', 'Os galhos da árvore estão secos', 'As raízes estão podres', 'O tronco da árvore está oco por dentro'],
     4: ['O tronco está oco e podre', 'Suas raízes estão doentes', 'A árvore está saudável', 'Seus galhos estão caíndo', 'As folhas apresentam ferrugem'],
     5: ['Seus galhos estão secos', 'Suas raízes estão expostas', 'A casca da árvore está caindo', 'O tronco está oco', 'Não existe nenhum problema com a árvore'],
     6: ['Suas folhas estão com ferrugem', 'A casca da árvore está podre', 'As raízes da árvore estão expostas', 'Pragas estão adoecendo a árvore', 'Seus galhos secos'],
-    7: ['A árvore não possuí raízes', 'Suas folhas estão caíndo', 'O tronco está oco por baixo', 'Os galhos estão podre', 'A árvore está saúdavel'],
+    7: ['A árvore não possuí raízes', 'Suas folhas estão caíndo', 'O tronco está oco por baixo', 'Os galhos estão podres', 'A árvore está saúdavel'],
     8: ['Suas folhas estão amareladas', 'A maioria das cascas da árvore caíram', 'O tronco da árvore está oco', 'Suas raízes estão expostas', 'Todos esses problemas'],
     9: ['O tronco está podre', 'Suas folhas estão com ferrugem', 'A árvore está totalmente saúdavel', 'Os galhos da árvore estão secos', 'A árvore está com problemas nas raízes'],
 }
